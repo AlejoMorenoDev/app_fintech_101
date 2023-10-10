@@ -118,7 +118,7 @@ p{
 }
 
 .form-header img{
-    margin: 0px 00px 20px 20px;
+    margin: 0px 0px 20px 20px;
     
 }
 
@@ -317,7 +317,8 @@ p{
     justify-content: space-between;
     font-size: var(--md);
     align-items: center;
-    margin: 0px 20px;
+    margin: 5px 20px 0px 20px;
+    /* margin: 0px 20px; */
 }
 
 .contenido-tarjeta{
@@ -375,10 +376,18 @@ p{
     justify-content: center;
 }
 
+.justify-content-between{
+    justify-content: space-between;
+}
+
+.text-align-start{
+    text-align: start;
+}
+
 .container-text {
     position: relative;
     text-align: center;
-  }
+}
   
   .text-center {
     position: absolute;
@@ -770,6 +779,31 @@ margin-left: 10px ;
     margin: 30px 20px 20px 20px;
     }
 
+#gif-logo{
+    max-width: 250px;
+}
+
+#gif-huella-dactilar{
+    max-width: 50px;
+}
+
+#t-cupo-total{
+    font-weight: var(--sm);
+    color: var(--dark);
+    font-weight: 700;
+}
+
+#t-gastos{
+    font-weight: var(--sm);
+    color: var(--dark);
+    font-weight: 700;
+}
+
+#t-disponible{
+    font-weight: var(--sm);
+    color: var(--dark);
+    font-weight: 700;
+}
 
 
 
