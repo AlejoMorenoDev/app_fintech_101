@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style_multi_tab.css">
+
+
+    <style>
+        .item-mes .active {
+            background-color: aqua;
+        }
+    </style>
+
+
+
+
+</head>
+
+<body class="bg-generico">
+
+    <main class="container-principal">
+        <!-- <section class="container-principal"> -->
+
+
+
+
+        <section class="container-secundario">
+            <nav class="container-nav">
+
+                <img id="ico-volver" src="./assets/svg/ico_volver.svg" alt="">
+                <div class="nav-title">
+                    <h3 class="title-mis-tarjetas">
+                        Mis Extractos
+                    </h3>
+
+                </div>
+
+            </nav>
+            <div class="info-general">
+                <div class="contenido-dinero-general">
+                    <div class="contenido-tarjeta-xtract">
+                        <div class="txt-title-xtract">
+
+                            <p>¿Cuál extracto necesitas?</p>
+
+                        </div>
+
+                    </div>
+                    <div class="contenido-tarjeta-xtract">
+                        <div class="txt-tarjeta-xtract">
+
+                            <div>
+                                <p>Selecciona el año y el mes</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <section class="container-extractos">
+                        <!-- <div>
+                                <h4>
+                                    2023
+                                </h4>
+                                <h4>
+                                    2024
+                                </h4>
+                            </div> -->
+
+                        <div class="tab-container">
+                            <ul class="tabs">
+                                <li class="tab active"><a href="#tab-1">2023</a></li>
+                                <li class="tab"><a href="#tab-2">2024</a></li>
+                                <!-- <li class="tab"><a href="#tab-3">2024</a></li> -->
+
+                            </ul>
+
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="tab-1">
+                                    <section class="extractos-meses">
+                                        <button class="item-mes ">Enero</button>
+                                        <button class="item-mes ">Febrero</button>
+                                        <button class="item-mes">Marzo</button>
+                                        <button class="item-mes">Abril</button>
+                                        <button class="item-mes">Mayo</button>
+                                        <button class="item-mes">Junio</button>
+                                        <button class="item-mes">Julio</button>
+                                        <button class="item-mes">Agosto</button>
+                                        <button class="item-mes">Septiembre</button>
+                                        <button class="item-mes">Octubre</button>
+                                        <button class="item-mes">Noviembre</button>
+                                        <button class="item-mes">Diciembre</button>
+
+                                    </section>
+                                </div>
+                                <div class="tab-pane" id="tab-2">
+                                    <section class="extractos-meses">
+                                        <button class="item-mes">Enero</button>
+                                        <button class="item-mes2024">Febrero</button>
+                                        <button class="item-mes2024">Marzo</button>
+                                        <button class="item-mes2024">Abril</button>
+                                        <button class="item-mes2024">Mayo</button>
+                                        <button class="item-mes2024">Junio</button>
+                                        <button class="item-mes2024">Julio</button>
+                                        <button class="item-mes2024">Agosto</button>
+                                        <button class="item-mes2024">Septiembre</button>
+                                        <button class="item-mes2024">Octubre</button>
+                                        <button class="item-mes2024">Noviembre</button>
+                                        <button class="item-mes2024">Diciembre</button>
+
+                                </div>
+                                <div class="tab-pane" id="tab-3">
+                                    Contenido de la sección 3
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </section>
+
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+        <section class="box-btn-extract">
+            <button disabled class="btn-descarga-extract">
+                Descargar
+            </button>
+        </section>
+
+
+        <!-- </section> -->
+
+    </main>
+
+    <script>
+
+        const tabs = document.querySelectorAll('.tab');
+        const tabContent = document.querySelector('.tab-content');
+        const botones = document.querySelectorAll('.item-mes');
+        const botonDescarga = document.querySelector('.btn-descarga-extract');
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                const targetId = tab.querySelector('a').getAttribute('href');
+                const targetPane = document.querySelector(targetId);
+
+                // Desactiva todos los paneles
+                const activePanes = tabContent.querySelectorAll('.tab-pane.active');
+                activePanes.forEach(pane => pane.classList.remove('active'));
+
+                // Activa el panel seleccionado
+                targetPane.classList.add('active');
+
+                // Actualiza también la clase "active" del tab correspondiente
+                tabs.forEach(t => t.classList.remove('active'));
+
+                
+
+                botones.forEach(boton => {
+                    if (boton.classList.contains('active')) {
+                        boton.classList.remove('active')
+                    }
+                })
+                tab.classList.add('active');
+                botonDescarga.disabled = true
+                botonDescarga.classList.remove('active')
+            });
+          
+            
+        });
+
+
+
+
+
+
+
+
+
+
+
+        botones.forEach(boton => {
+
+
+            boton.addEventListener('click', () => {
+
+                boton.classList.add('active')
+                botonDescarga.disabled = false
+                botonDescarga.classList.add('active')
+                botones.forEach(b => {
+
+                    if (boton != b && b.classList.contains('active')) {
+                        b.classList.remove('active')
+                    }
+                })
+
+
+
+            });
+
+        });
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>

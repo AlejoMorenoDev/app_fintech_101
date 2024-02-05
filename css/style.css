@@ -42,16 +42,16 @@ p{
 }
 
 .bg-bienvenido{
-    background-image: url("/assets/img/img_bienvenida_fintech.jpg");
+    background-image: url("../assets/img/img_bienvenida_fintech.jpg");
 }
 
 
 .bg-ingresar{
-    background-image: url("/assets/img/img_bienvenida_02_fintech.jpg");
+    background-image: url("../assets/img/img_bienvenida_02_fintech.jpg");
 }
 
 .bg-login{
-    background-image: url("/assets/img/img_login.jpg");
+    background-image: url("../assets/img/img_login.jpg");
 }
 
 .bg-generico{
@@ -271,8 +271,20 @@ p{
 
 .container-principal{
     width: 100%;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     max-width: 480px;
+    min-height: 100vh;
+    justify-content: space-between;
+}
+
+.container-principal-ajustes{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    max-width: 480px;
+    min-height: 100vh;
+    
 }
 
 
@@ -344,6 +356,7 @@ p{
 #name-tarjeta{
     margin-left: 10px;
     display: flex;
+    line-height: 2.3rem;
 }
 
 .number-tf{
@@ -701,7 +714,7 @@ margin-left: 10px ;
     color: var(--dark);
     font-size: 3.1rem;
     font-weight: 700;
-    margin: 5px 0px 0px 20px ;
+    margin: 14px 0px 0px 20px ;
 }
 
 .valor-minimo-pagar-fecha{
@@ -710,6 +723,7 @@ margin-left: 10px ;
     font-size: var(--md);
     font-weight: 400;
     margin: 5px 0px 0px 20px ;
+    line-height: 2.5rem;
 }
 
 .button-pay-minimo{
@@ -742,6 +756,21 @@ margin-left: 10px ;
     margin: 0px 0px 30px 0px;
     width: 100%;
 }
+
+.container-configuracion-usuario-notif{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.notif-1 {
+    text-align: left;
+}
+
+
+    
+    
 
 .container-configuracion-usuario-items{
     display: flex;
@@ -804,6 +833,269 @@ margin-left: 10px ;
     color: var(--dark);
     font-weight: 700;
 }
+
+
+.extractos-meses{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 20px 0px 0px 0px;
+    
+}
+
+
+
+.item-mes{
+    
+    align-items: center;
+    background-color: rgb(191, 193, 191);
+    border-radius: 8px;
+    text-align: center;
+    padding: 15px 0;
+    width: 100%;
+    border: none;
+    justify-content: center;
+    justify-self: center;
+    font-size: 1.3rem;
+}
+
+
+
+.item-mes.active{
+    background-color: var(--light-blue);
+}
+
+.btn-descarga-extract.active{
+    background-color: var(--light-blue);
+    color: var(--white);
+    font-weight: 700;
+}
+
+.item-mes2024{
+    
+    align-items: center;
+    background-color: rgb(208, 210, 208);
+    border-radius: 8px;
+    text-align: center;
+    padding: 15px 0;
+    width: 100%;
+    border: none ;
+    justify-content: center;
+    justify-self: center;
+    font-size: 1.3rem;
+    color: #999;
+}
+
+/* .mes-enable {
+    background-color: rgb(191, 193, 191);
+    color: #292937;
+    
+} */
+
+.box-btn-extract{
+    display: flex;
+    justify-content: center;
+}
+
+.btn-descarga-extract{
+    background-color: rgb(191, 193, 191);
+    width: 100%;
+    padding: 20px 0;
+    border: none;
+    font-size: var(--md);
+    color: var(--dark);
+}
+
+.contenido-tarjeta-xtract{
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+.txt-title-xtract{
+    font-size: 2.2rem;
+    margin-top: 5px;
+}
+
+.txt-tarjeta-xtract p{
+    font-weight: 700;
+    font-size: var(--md);
+    margin-top: 10px;
+}
+
+.number-notificaciones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(239, 38, 7);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin: 0 10px 0 0;
+}
+
+.number-notificaciones p{
+    font-size: 1rem;
+    font-weight: 500;
+    color: white ;
+}
+    
+
+
+.ico-campana{
+    margin-left: 4px;
+}
+
+
+.container-notificaciones{
+    margin: 0px 20px 0px 20px;
+    
+    
+}
+
+.container-notificaciones hr{
+    margin: 0px 0px 0px 0px;
+    width: 100%;
+}
+
+.noti-elementos{
+    margin: 20px 10px;
+}
+
+
+
+.notif-title{
+    font-size: 1.7rem;
+    font-weight: 800;
+    padding-bottom: 8px;
+    margin-left: 15px ;
+}
+
+.notif-text{
+    font-size: 1.7rem;
+    font-weight: 400;
+    margin-bottom: 8px;
+    margin-left: 15px ;
+}
+
+.notif-fecha{
+    font-size: 1.4rem;
+    font-weight: 300;
+    margin-left: 15px ;
+}
+
+.ico-configuracion-notif{
+    display: flex;
+    align-items: flex-start;
+    width: 3rem;
+}
+
+.contenido-dinero-pay{
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    line-height: 3rem;
+    align-items: center;
+}
+
+.contenido-dinero-general-pay{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    background-color: var(--white);
+    justify-content: center;
+    padding: 10px 15px 10px 15px;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+#hr-pay{
+    width: 80%;
+    margin: 15px auto 0px auto;
+}
+
+.valor-pay-minimo{
+    font-weight: 700;
+}
+
+.valor-pay-total{
+    font-weight: 700;
+}
+
+.info-general-pay{
+    display: flex;
+    flex-direction: column;
+    margin: 35px 0px 25px 0px;
+}
+
+.box-btn-pay{
+    display: flex;
+    justify-content: center;
+}
+
+.btn-pay{
+    background-color:var(--light-blue);
+    width: 100%;
+    padding: 20px 0;
+    border: none;
+    font-size: var(--md);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: var(--white);
+    font-weight: 700;
+}
+
+.btn-pay img{
+    width: 35px;
+}
+
+
+
+/* .btnPayPse{
+    background-color: #20B1E7;
+}
+
+
+*/
+    
+    
+.btnPayPse:disabled{
+    background-color: rgb(191, 193, 191);
+    color: var(--dark);
+    font-weight: 500;
+}   
+
+.input-otro-valor{
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
+    height: 60px;
+    border: none;
+    border-radius: 5px;
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--grey-dark);
+    padding-left: 10px;
+    background: var(--white);
+    margin-top: 12px;
+}
+    
+
+.input-otro-valor:focus{
+    outline: none;
+}
+
+
+
+
+
+    
+
+
 
 
 

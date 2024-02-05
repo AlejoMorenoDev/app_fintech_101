@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style_multi_tab.css">
+    <link rel="stylesheet" href="./css/style-check-box.css">
+
+
+    <style>
+        .item-mes .active {
+            background-color: aqua;
+        }
+    </style>
+
+
+
+
+</head>
+
+<body class="bg-generico">
+
+    <main class="container-principal">
+        <!-- <section class="container-principal"> -->
+
+
+
+
+        <section class="container-secundario">
+            <nav class="container-nav">
+
+                <img id="ico-volver" src="./assets/svg/ico_volver.svg" alt="">
+                <div class="nav-title">
+                    <h3 class="title-mis-tarjetas">
+                        Pagar
+                    </h3>
+
+                </div>
+
+            </nav>
+            <div class="info-general">
+                <div class="contenido-dinero-general">
+                    <div class="contenido-tarjeta-xtract">
+                        <div class="txt-title-xtract">
+
+                            <p>¿Cuánto deseas pagar?</p>
+
+                        </div>
+
+                    </div>
+                    <div class="contenido-tarjeta-xtract">
+                        <div class="txt-tarjeta-xtract">
+
+                            <div>
+                                <p>Selecciona una opción</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="info-general-pay">
+
+                        <div>
+                            <div class="contenido-dinero-general-pay">
+                                <div class="contenido-dinero-pay">
+                                    <div class="d-flex d-flex-aling-center">
+                                        <!-- <div id="circulo_gris"></div> -->
+                                        <p>Fecha de pago</p>
+
+                                    </div>
+                                    <p> <span id="t-cupo-total">Feb 20</span></p>
+                                </div>
+
+                                <div class="contenido-dinero-pay">
+                                    <div class="d-flex d-flex-aling-center">
+                                        <!-- <div id="circulo_gris"></div> -->
+                                        <p>Fecha de corte</p>
+                                    </div>
+
+                                    <p> <span id="t-gastos">Ene 31</span> </p>
+
+                                </div>
+
+                                <div class="contenido-dinero-pay">
+                                    <div class="d-flex d-flex-aling-center">
+                                        <!-- <div id="circulo_gris"></div> -->
+                                        <p>Periodo facturado</p>
+
+                                    </div>
+                                    <p> <span id="t-disponible">1 ene / 31 ene</span></p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+
+                    </div>
+
+
+                    <!-- check 1 -->
+
+                    <!-- <div class="boxes">
+                        <input type="checkbox" id="box-1">
+                        <label for="box-1">Pago minimo <br>95.000 <br> pago cuota<br></label>
+
+                        
+                    </div> -->
+
+                    <!-- check 1 -->
+
+                    <!-- check 2 -->
+
+                    <div class="checkboxes-pay">
+
+                        <div class="checkboxes__row">
+                            <div class="checkboxes__item">
+                                <label class="checkbox style-c">
+                                    <input name="ch" class="checks" type="radio" />
+                                    <div class="checkbox__checkmark"></div>
+                                    <div class="checkbox__body"><strong>Pago mínimo</strong> <br> <span
+                                            class="valor-pay-minimo">$95.000,oo</span> <br> Pago de tu cuota<br></div>
+                                </label>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <hr id="hr-pay">
+
+                    <div class="checkboxes-pay">
+
+                        <div class="checkboxes__row">
+                            <div class="checkboxes__item">
+                                <label class="checkbox style-c">
+                                    <input name="ch" type="radio" class="checks" />
+                                    <div class="checkbox__checkmark"></div>
+                                    <div class="checkbox__body"><strong>Pago Total</strong> <br> <span
+                                            class="valor-pay-total">$295.350,oo</span> <br> Valor de tu deuda hasta
+                                        hoy<br></div>
+                                </label>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <hr id="hr-pay">
+                    <div class="checkboxes-pay">
+
+                        <div class="checkboxes__row">
+                            <div class="checkboxes__item">
+                                <label class="checkbox style-c">
+                                    <input name="ch" type="radio" class="checks" />
+                                    <div class="checkbox__checkmark"></div>
+                                    <div class="checkbox__body"><strong>Pagar valor diferente</strong>  <br> Digita el valor que deseas pagar<br></div>
+                                </label>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div>
+                        
+                        <input id="otroValor" class="input-otro-valor" type="text" id="Documento"  >
+                    </div>
+
+                    <hr id="hr-pay">
+                    
+
+
+
+
+
+
+                    <!-- check 2 -->
+
+                    <!-- <section class="container-extractos">
+                       
+
+                        <div class="tab-container">
+                            <ul class="tabs">
+                                <li class="tab active"><a href="#tab-1">2023</a></li>
+                                <li class="tab"><a href="#tab-2">2024</a></li>
+                                
+
+                            </ul>
+
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="tab-1">
+                                    <section class="extractos-meses">
+                                        <button class="item-mes ">Enero</button>
+                                        <button class="item-mes ">Febrero</button>
+                                        <button class="item-mes">Marzo</button>
+                                        <button class="item-mes">Abril</button>
+                                        <button class="item-mes">Mayo</button>
+                                        <button class="item-mes">Junio</button>
+                                        <button class="item-mes">Julio</button>
+                                        <button class="item-mes">Agosto</button>
+                                        <button class="item-mes">Septiembre</button>
+                                        <button class="item-mes">Octubre</button>
+                                        <button class="item-mes">Noviembre</button>
+                                        <button class="item-mes">Diciembre</button>
+
+                                    </section>
+                                </div>
+                                <div class="tab-pane" id="tab-2">
+                                    <section class="extractos-meses">
+                                        <button class="item-mes2024 mes-enable">Enero</button>
+                                        <button class="item-mes2024">Febrero</button>
+                                        <button class="item-mes2024">Marzo</button>
+                                        <button class="item-mes2024">Abril</button>
+                                        <button class="item-mes2024">Mayo</button>
+                                        <button class="item-mes2024">Junio</button>
+                                        <button class="item-mes2024">Julio</button>
+                                        <button class="item-mes2024">Agosto</button>
+                                        <button class="item-mes2024">Septiembre</button>
+                                        <button class="item-mes2024">Octubre</button>
+                                        <button class="item-mes2024">Noviembre</button>
+                                        <button class="item-mes2024">Diciembre</button>
+
+                                </div>
+                                <div class="tab-pane" id="tab-3">
+                                    Contenido de la sección 3
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </section> -->
+
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+        <section class="box-btn-pay">
+            <button id="pay" disabled class="btn-pay btnPayPse">
+                Pagar
+                <img src="./assets/img/icono-pse.png" alt="">
+            </button>
+        </section>
+
+
+        <!-- </section> -->
+
+    </main>
+
+    <script>
+
+        const radioButtons = document.querySelectorAll('input[type="radio"]');
+        const button = document.getElementById('pay');
+
+        radioButtons.forEach(radioButton => {
+            radioButton.addEventListener('change', () => {
+                if (radioButton.checked) {
+                    button.disabled = false;
+                }
+            });
+        });
+
+
+        const otrovalor=document.getElementById('otroValor')
+        otrovalor.addEventListener('input',()=>{
+            console.log(otrovalor.value)
+            otrovalor.value='$'+otrovalor.value
+        })
+
+        // tabs.forEach(tab => {
+        //     tab.addEventListener('click', () => {
+        //         const targetId = tab.querySelector('a').getAttribute('href');
+        //         const targetPane = document.querySelector(targetId);
+
+        //         // Desactiva todos los paneles
+        //         const activePanes = tabContent.querySelectorAll('.tab-pane.active');
+        //         activePanes.forEach(pane => pane.classList.remove('active'));
+
+        //         // Activa el panel seleccionado
+        //         targetPane.classList.add('active');
+
+        //         // Actualiza también la clase "active" del tab correspondiente
+        //         tabs.forEach(t => t.classList.remove('active'));
+
+
+
+        //         botones.forEach(boton => {
+        //             if (boton.classList.contains('active')) {
+        //                 boton.classList.remove('active')
+        //             }
+        //         })
+        //         tab.classList.add('active');
+        //         botonDescarga.disabled = true
+        //         botonDescarga.classList.remove('active')
+        //     });
+
+
+        // });
+
+        // botones.forEach(boton => {
+
+
+        //     boton.addEventListener('click', () => {
+
+        //         boton.classList.add('active')
+        //         botonDescarga.disabled = false
+        //         botonDescarga.classList.add('active')
+        //         botones.forEach(b => {
+
+        //             if (boton != b && b.classList.contains('active')) {
+        //                 b.classList.remove('active')
+        //             }
+        //         })
+
+
+
+        //     });
+
+        // });
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>
