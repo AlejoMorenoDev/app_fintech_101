@@ -1,192 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/style_multi_tab.css">
-    <link rel="stylesheet" href="./css/style-check-box.css">
-
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style_multi_tab.css" />
+    <link rel="stylesheet" href="./css/style-check-box.css" />
 
     <style>
-        .item-mes .active {
-            background-color: aqua;
-        }
+      .item-mes .active {
+        background-color: aqua;
+      }
     </style>
+  </head>
 
-
-
-
-</head>
-
-<body class="bg-generico">
-
+  <body class="bg-generico">
     <main class="container-principal">
-        <!-- <section class="container-principal"> -->
+      <!-- <section class="container-principal"> -->
 
-
-
-
-        <section class="container-secundario">
-            <nav class="container-nav">
-
-                <img id="ico-volver" src="./assets/svg/ico_volver.svg" alt="">
-                <div class="nav-title">
-                    <h3 class="title-mis-tarjetas">
-                        Pagar
-                    </h3>
-
+      <section class="container-secundario">
+        <nav class="container-nav">
+          <img id="ico-volver" src="./assets/svg/ico_volver.svg" alt="" />
+          <div class="nav-title">
+            <h3 class="title-mis-tarjetas">Pagar</h3>
+          </div>
+        </nav>
+        <div class="info-general">
+          <div class="contenido-dinero-general">
+            <div class="contenido-tarjeta-xtract">
+              <div class="txt-title-xtract">
+                <p>¿Cuánto deseas pagar?</p>
+              </div>
+            </div>
+            <div class="contenido-tarjeta-xtract">
+              <div class="txt-tarjeta-xtract">
+                <div>
+                  <p>Selecciona una opción</p>
                 </div>
+              </div>
+            </div>
 
-            </nav>
-            <div class="info-general">
-                <div class="contenido-dinero-general">
-                    <div class="contenido-tarjeta-xtract">
-                        <div class="txt-title-xtract">
-
-                            <p>¿Cuánto deseas pagar?</p>
-
-                        </div>
-
+            <div class="info-general-pay">
+              <div>
+                <div class="contenido-dinero-general-pay">
+                  <div class="contenido-dinero-pay">
+                    <div class="d-flex d-flex-aling-center">
+                      <!-- <div id="circulo_gris"></div> -->
+                      <p>Fecha de pago</p>
                     </div>
-                    <div class="contenido-tarjeta-xtract">
-                        <div class="txt-tarjeta-xtract">
+                    <p><span id="t-cupo-total">Feb 20</span></p>
+                  </div>
 
-                            <div>
-                                <p>Selecciona una opción</p>
-                            </div>
-
-                        </div>
-
+                  <div class="contenido-dinero-pay">
+                    <div class="d-flex d-flex-aling-center">
+                      <!-- <div id="circulo_gris"></div> -->
+                      <p>Fecha de corte</p>
                     </div>
 
-                    <div class="info-general-pay">
+                    <p><span id="t-gastos">Ene 31</span></p>
+                  </div>
 
-                        <div>
-                            <div class="contenido-dinero-general-pay">
-                                <div class="contenido-dinero-pay">
-                                    <div class="d-flex d-flex-aling-center">
-                                        <!-- <div id="circulo_gris"></div> -->
-                                        <p>Fecha de pago</p>
-
-                                    </div>
-                                    <p> <span id="t-cupo-total">Feb 20</span></p>
-                                </div>
-
-                                <div class="contenido-dinero-pay">
-                                    <div class="d-flex d-flex-aling-center">
-                                        <!-- <div id="circulo_gris"></div> -->
-                                        <p>Fecha de corte</p>
-                                    </div>
-
-                                    <p> <span id="t-gastos">Ene 31</span> </p>
-
-                                </div>
-
-                                <div class="contenido-dinero-pay">
-                                    <div class="d-flex d-flex-aling-center">
-                                        <!-- <div id="circulo_gris"></div> -->
-                                        <p>Periodo facturado</p>
-
-                                    </div>
-                                    <p> <span id="t-disponible">1 ene / 31 ene</span></p>
-                                </div>
-
-                            </div>
-
-                        </div>
-
-
-
-
+                  <div class="contenido-dinero-pay">
+                    <div class="d-flex d-flex-aling-center">
+                      <!-- <div id="circulo_gris"></div> -->
+                      <p>Periodo facturado</p>
                     </div>
+                    <p><span id="t-disponible">1 ene / 31 ene</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
 
+            <!-- check 1 -->
 
-                    <!-- check 1 -->
-
-                    <!-- <div class="boxes">
+            <!-- <div class="boxes">
                         <input type="checkbox" id="box-1">
                         <label for="box-1">Pago minimo <br>95.000 <br> pago cuota<br></label>
 
                         
                     </div> -->
 
-                    <!-- check 1 -->
+            <!-- check 1 -->
 
-                    <!-- check 2 -->
+            <!-- check 2 -->
 
-                    <div class="checkboxes-pay">
-
-                        <div class="checkboxes__row">
-                            <div class="checkboxes__item">
-                                <label class="checkbox style-c">
-                                    <input name="ch" class="checks" type="radio" />
-                                    <div class="checkbox__checkmark"></div>
-                                    <div class="checkbox__body"><strong>Pago mínimo</strong> <br> <span
-                                            class="valor-pay-minimo">$95.000,oo</span> <br> Pago de tu cuota<br></div>
-                                </label>
-                            </div>
-
-                        </div>
+            <div class="checkboxes-pay">
+              <div class="checkboxes__row">
+                <div class="checkboxes__item">
+                  <label class="checkbox style-c">
+                    <input name="ch" class="checks" type="radio" />
+                    <div class="checkbox__checkmark"></div>
+                    <div class="checkbox__body">
+                      <strong>Pago mínimo</strong> <br />
+                      <span class="valor-pay-minimo">$95.000,oo</span> <br />
+                      Pago de tu cuota<br />
                     </div>
+                  </label>
+                </div>
+              </div>
+            </div>
 
-                    <hr id="hr-pay">
+            <hr id="hr-pay" />
 
-                    <div class="checkboxes-pay">
-
-                        <div class="checkboxes__row">
-                            <div class="checkboxes__item">
-                                <label class="checkbox style-c">
-                                    <input name="ch" type="radio" class="checks" />
-                                    <div class="checkbox__checkmark"></div>
-                                    <div class="checkbox__body"><strong>Pago Total</strong> <br> <span
-                                            class="valor-pay-total">$295.350,oo</span> <br> Valor de tu deuda hasta
-                                        hoy<br></div>
-                                </label>
-                            </div>
-
-                        </div>
+            <div class="checkboxes-pay">
+              <div class="checkboxes__row">
+                <div class="checkboxes__item">
+                  <label class="checkbox style-c">
+                    <input name="ch" type="radio" class="checks" />
+                    <div class="checkbox__checkmark"></div>
+                    <div class="checkbox__body">
+                      <strong>Pago Total</strong> <br />
+                      <span class="valor-pay-total">$295.350,oo</span> <br />
+                      Valor de tu deuda hasta hoy<br />
                     </div>
+                  </label>
+                </div>
+              </div>
+            </div>
 
-                    <hr id="hr-pay">
-                    <div class="checkboxes-pay">
-
-                        <div class="checkboxes__row">
-                            <div class="checkboxes__item">
-                                <label class="checkbox style-c">
-                                    <input name="ch" type="radio" class="checks" />
-                                    <div class="checkbox__checkmark"></div>
-                                    <div class="checkbox__body"><strong>Pagar valor diferente</strong>  <br> Digita el valor que deseas pagar<br></div>
-                                </label>
-                            </div>
-
-                        </div>
+            <hr id="hr-pay" />
+            <div class="checkboxes-pay">
+              <div class="checkboxes__row">
+                <div class="checkboxes__item">
+                  <label class="checkbox style-c">
+                    <input
+                      id="radioOtrovalor"
+                      name="ch"
+                      type="radio"
+                      class="checks"
+                    />
+                    <div class="checkbox__checkmark"></div>
+                    <div class="checkbox__body">
+                      <strong>Pagar valor diferente</strong> <br />
+                      Digita el valor que deseas pagar<br />
                     </div>
+                  </label>
+                </div>
+              </div>
+            </div>
 
-                    <div>
-                        
-                        <input id="otroValor" class="input-otro-valor" type="text" id="Documento"  >
-                    </div>
+            <div id="VistaOtroValor" style="display: none">
+              <input
+                id="otroValor"
+                class="input-otro-valor"
+                type="text"
+                id="Documento"
+                
+                placeholder="$"
+              />
+            </div>
 
-                    <hr id="hr-pay">
-                    
+            <hr id="hr-pay" />
 
+            <!-- check 2 -->
 
-
-
-
-
-                    <!-- check 2 -->
-
-                    <!-- <section class="container-extractos">
+            <!-- <section class="container-extractos">
                        
 
                         <div class="tab-container">
@@ -240,104 +218,55 @@
 
 
                     </section> -->
+          </div>
+        </div>
+      </section>
 
+      <section class="box-btn-pay">
+        <button id="pay" disabled class="btn-pay btnPayPse">
+          Pagar
+          <img src="./assets/img/icono-pse.png" alt="" />
+        </button>
+      </section>
 
-                </div>
-
-            </div>
-
-
-        </section>
-
-        <section class="box-btn-pay">
-            <button id="pay" disabled class="btn-pay btnPayPse">
-                Pagar
-                <img src="./assets/img/icono-pse.png" alt="">
-            </button>
-        </section>
-
-
-        <!-- </section> -->
-
+      <!-- </section> -->
     </main>
 
     <script>
+      const radioButtons = document.querySelectorAll('input[type="radio"]');
+      const button = document.getElementById("pay");
+      const VistaOtroValor = document.getElementById("VistaOtroValor");
 
-        const radioButtons = document.querySelectorAll('input[type="radio"]');
-        const button = document.getElementById('pay');
+      radioButtons.forEach((radioButton) => {
+        radioButton.addEventListener("change", () => {
+          if (radioButton.checked) {
+            if (radioButton.id == "radioOtrovalor") {
+              VistaOtroValor.style.display = "block";
+              console.log(VistaOtroValor);
 
-        radioButtons.forEach(radioButton => {
-            radioButton.addEventListener('change', () => {
-                if (radioButton.checked) {
-                    button.disabled = false;
-                }
-            });
+              VistaOtroValor.childNodes[1].focus();
+
+              button.scrollIntoView(true);
+            } else {
+              VistaOtroValor.style.display = "none";
+            }
+            button.disabled = false;
+          }
         });
+      });
 
+      const otrovalor = document.getElementById("otroValor");
+      otrovalor.addEventListener("input", () => {
+        var valor = otrovalor.value.trim(); 
 
-        const otrovalor=document.getElementById('otroValor')
-        otrovalor.addEventListener('input',()=>{
-            console.log(otrovalor.value)
-            otrovalor.value='$'+otrovalor.value
-        })
-
-        // tabs.forEach(tab => {
-        //     tab.addEventListener('click', () => {
-        //         const targetId = tab.querySelector('a').getAttribute('href');
-        //         const targetPane = document.querySelector(targetId);
-
-        //         // Desactiva todos los paneles
-        //         const activePanes = tabContent.querySelectorAll('.tab-pane.active');
-        //         activePanes.forEach(pane => pane.classList.remove('active'));
-
-        //         // Activa el panel seleccionado
-        //         targetPane.classList.add('active');
-
-        //         // Actualiza también la clase "active" del tab correspondiente
-        //         tabs.forEach(t => t.classList.remove('active'));
-
-
-
-        //         botones.forEach(boton => {
-        //             if (boton.classList.contains('active')) {
-        //                 boton.classList.remove('active')
-        //             }
-        //         })
-        //         tab.classList.add('active');
-        //         botonDescarga.disabled = true
-        //         botonDescarga.classList.remove('active')
-        //     });
-
-
-        // });
-
-        // botones.forEach(boton => {
-
-
-        //     boton.addEventListener('click', () => {
-
-        //         boton.classList.add('active')
-        //         botonDescarga.disabled = false
-        //         botonDescarga.classList.add('active')
-        //         botones.forEach(b => {
-
-        //             if (boton != b && b.classList.contains('active')) {
-        //                 b.classList.remove('active')
-        //             }
-        //         })
-
-
-
-        //     });
-
-        // });
-
-
-
+        if (valor.charAt(0) !== "$") {
+          if (valor.length > 0) {
+            valor = "$" + valor; 
+          }
+        }
+        otrovalor.value = valor;
+      });
 
     </script>
-
-
-</body>
-
+  </body>
 </html>
